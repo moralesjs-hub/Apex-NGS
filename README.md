@@ -17,7 +17,7 @@ NFL Next Gen Stats (NGS) Scouting & Efficiency Intelligence Engine. Analyzes tra
 ### 1. Environment Setup
 Copy the example environment file and fill in your keys:
 
-"bash
+'''bash
 cp .env.example .env
 2. Run Database & Services
 Bash
