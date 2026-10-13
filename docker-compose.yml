@@ -1,0 +1,17 @@
+services:
+  apex-ngs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: apex-ngs-app
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+      - "8501:8501"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
