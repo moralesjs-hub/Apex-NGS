@@ -16,15 +16,21 @@ NFL Next Gen Stats (NGS) Scouting & Efficiency Intelligence Engine. Analyzes tra
 
 ### 1. Environment Setup
 Copy the example environment file and fill in your keys:
-
-'''bash
+```bash
 cp .env.example .env
-2. Run Database & Services
-Bash
+```
+
+### 2. Run Database & Services
+```bash
 docker compose up -d
-3. Seed Data
-Bash
+```
+
+### 3. Seed Data
+```bash
 python seed_index.py
-4. Run Application
-Bash
+```
+
+### 4. Run Application
+```bash
 python app.py
+```
